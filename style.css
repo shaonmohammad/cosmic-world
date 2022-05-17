@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+header{
+   
+    background-image:url(images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0,0,0.7);
+    background-blend-mode: overlay;
+
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.highlight{
+    color: orange;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style-type: none;
+    margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid orange;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: .5s;
+    font-weight: bold;
+}
+.navigation li a:hover{
+     background-color: orange;
+     color: black;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.banner-right img{
+    width: 100%;
+}
+.banner-left h1{
+    font-weight: bolder;
+    color: white;
+}
+.banner-left p{
+    line-height: 1.5;
+    margin: 20px 0px;
+    color: white;
+}
+.primary-button{
+    border: none;
+    padding: 10px 20px;
+    background-image: linear-gradient(orange,rgba(255, 0, 0, 0.829));
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    
+}
+.primary-button:hover{
+    background-image: linear-gradient(orange,rgba(255, 0, 0, 0.623));
+}
