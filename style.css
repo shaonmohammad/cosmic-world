@@ -30,6 +30,7 @@ nav{
 }
 .highlight{
     color: orange;
+    
 }
 .navigation{
     display: flex;
@@ -81,3 +82,73 @@ nav{
 .primary-button:hover{
     background-image: linear-gradient(orange,rgba(255, 0, 0, 0.623));
 }
+.section-title{
+    margin: 50px 0px;
+}
+.card-icon i{
+   font-size: 50px;
+   color: orange;
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+}
+.cards{
+    display: grid;
+    grid-template-columns:repeat(2,350px);
+    justify-content: center;
+    row-gap: 40px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.about-des{
+    width: 50%;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.gallery-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid salmon;
+}
+
+
+/* This is responsive part....... */
+@media only screen and (max-width: 600px) {
+    .banner{
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns:repeat(1,350px);
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+     nav{
+        display: none;
+    }
+
+    .gallery{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    }
+  }
